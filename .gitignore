@@ -1,0 +1,23 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform lock and hidden directories
+.terraform/
+.terraform.lock.hcl
+
+# Ignore sensitive files
+aws-credentials/
+*.pem
+*.key
+*.crt
+*.env
+secrets.yaml
+config.yaml
+
+# Ignore AWS credentials file
+~/.aws/credentials
+~/.aws/config
+
+# Ignore Terraform plan files
+*.tfplan

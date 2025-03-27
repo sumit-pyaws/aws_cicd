@@ -1,0 +1,14 @@
+name: Trigger workflow on PR merge to DEV or PROD
+
+on:
+    push:
+        branches:
+            - dev
+            - prod
+
+jobs:
+    run-on-merge:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run a script or deploy
+              run: echo "PR merged to $(git branch --show-current)"

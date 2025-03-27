@@ -3,8 +3,8 @@ name: Trigger workflow on PR merge to DEV or PROD
 on:
     push:
         branches:
-            -dev
-            -prod
+            - dev
+            - prod
 
 jobs:
     run-on-merge:
